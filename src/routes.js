@@ -23,7 +23,7 @@ router.get('/page/:page', webController.page);
 router.post('/api/user/register', apiUserController.register);
 router.post('/api/user/login', apiUserController.login);
 
-router.use(verify);
+//router.use(verify);
 router.get('/user/:id', apiUserController.info);
 
 router.get('/api/feed', apiFeedController.index);
@@ -33,3 +33,5 @@ router.put('/api/feed/:id', apiFeedController.update);
 router.delete('/api/feed/:id', apiFeedController.delete);
 
 module.exports = router;
+
+
